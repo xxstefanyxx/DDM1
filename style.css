@@ -1,0 +1,163 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #9f83eb;
+    color: white;
+}
+ 
+.app-header {
+    background-color: #c19ce4;
+    padding: 35px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    border-radius: 10px;
+}
+
+.app-footer {
+    background-color: #c19ce4;
+    padding: 13px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    bottom: 0;
+    z-index: 10;
+    border-radius: 10px;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.nav-item {
+    color: #4a3b5c; /* Cor dos ícones para combinar com seu tema */
+    font-size: 1.4rem;
+    text-decoration: none;
+    transition: transform 0.2s ease, color 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+}
+
+.nav-item:hover, 
+.nav-item.active {
+    color: #2b1d3d;
+    transform: scale(1.1);
+}
+
+/* Destaque especial para o botão de Play Circular */
+.nav-item.play-btn {
+    font-size: 2.2rem;
+}
+
+.game {
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+
+img {
+  float: left;
+  
+  margin: 0px 0px 15px 20px;
+}
+.player {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    background: #9d9cf3;
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.avatar {
+    font-size: 70px;
+}
+
+.player-info {
+    flex: 1;
+}
+
+.xp-container {
+    width: 100%;
+    height: 20px;
+    background: #444;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 10px 0;
+     border: 3px solid #000000;
+}
+
+#xp-barra {
+    width: 0%;
+    height: 100%;
+    background: #e49ec7;
+   
+}
+
+.missions {
+    background: #9d9cf3;
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.mission {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+
+    padding: 15px;
+    margin-top: 10px;
+
+    background: #cd93d4;
+    border-radius: 16px;
+
+    border: 3px solid #000000;
+}
+
+.mission button {
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.achievements {
+    background: #9d9cf3;
+    padding: 20px;
+    border-radius: 15px;
+    
+}
+
+.achievement {
+    padding: 15px;
+    margin-top: 10px;
+    background: #cd93d4;
+    border-radius: 10px;
+    border: 3px solid #000000;
+}
+
+.locked {
+    opacity: 0.4;
+    border: 3px solid #000000;
+}
